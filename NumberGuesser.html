@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/png" href="http://www.sclance.com/pngs/number-png/number_png_943709.png" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <title>Number Guesser</title>
+
+</head>
+
+<body onload="init() ,entertosubmit (), checkpass()">
+
+    <div class="alert alert-success" role="alert">
+        <div align="center">
+            <h1>Number Guesser</h1>
+
+        </div>
+    </div>
+
+    <p id="demo"></p>
+
+    <div class="container" align="center">
+        <h4 id="output"></h4>
+
+        <br>
+        <div class="input-group input-group-lg" style="color:aqua">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-lg">You Guesser</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg"
+                id="inputguess" onkeypress="isInputNumber(event)">
+
+        </div>
+
+    </div>
+    <div align="center">
+        <br>
+        <!-- <p id="count">Count : 0 </p> -->
+        <br>
+        <button type="button" class="btn btn-outline-success btn-lg" onclick="checkguess()">Check your guess</button>
+        <br>
+        <br>
+        <button type="button" class="btn btn-outline-success btn-lg" id="correct" onclick="tryagain()">Try again</button>
+    </div>
+    <h1 id="ttt"></h1>
+
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
